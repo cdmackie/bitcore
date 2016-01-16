@@ -4,8 +4,10 @@ var hex = function(hex) {
   return new Buffer(hex, 'hex');
 };
 
-var livenet = {
+exports.nets = {
 	BTC:{
+		symbol:'BTC',
+		coinname:'Bitcoin',
 		name: 'livenet',
 		magic: hex('f9beb4d9'),
 		addressVersion: 0x00,
@@ -34,6 +36,8 @@ var livenet = {
 		defaultClientPort: 8333
 	},
 	DOGE:{
+		symbol:'DOGE',
+		coinname:'Dogecoin',
 		name: 'livenet',
 		magic: hex('c0c0c0c0'),
 		addressVersion: 0x1e,
@@ -60,6 +64,8 @@ var livenet = {
 		defaultClientPort: 22556
 	},
 	LTC:{
+		symbol:'LTC',
+		coinname:'Litecoin',
 		name: 'livenet',
 		magic: hex('fbc0b6db'),
 		addressVersion: 0x30,
@@ -88,7 +94,7 @@ var livenet = {
 	}
 };
 
-exports.livenet = livenet[process.env["BITCORE_COIN"] || "BTC"] || livenet.BTC;
+exports.livenet = exports.nets[process.env["BITCORE_COIN"] || "BTC"] || exports.nets.BTC;
 
 exports.mainnet = exports.livenet;
 
