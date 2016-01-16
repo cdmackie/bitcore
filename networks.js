@@ -49,7 +49,7 @@ var livenet = {
 			version: 1,
 			prev_hash: buffertools.fill(new Buffer(32), 0),
 			timestamp: 1386325540,
-			bits: 486604799,
+			bits: 504365040,
 		},
 		dnsSeeds: [
 			'seed.dogecoin.com',
