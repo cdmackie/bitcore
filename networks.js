@@ -91,6 +91,35 @@ exports.nets = {
 			'dnsseed.weminemnc.com'
 		],
 		defaultClientPort: 9333
+	},
+	NMC:{
+		symbol:'NMC',
+		coinname:'namecoin',
+		name: 'livenet',
+		magic: hex('fbc0b6db'),
+		addressVersion: 0x30,
+		privKeyVersion: 0xb0,
+		P2SHVersion: 5,
+		hkeyPublicVersion: 0x0488c42e,
+		hkeyPrivateVersion: 0x0488e1f4,
+		genesisBlock: {
+			hash: hex('70c7a9f0a2fb3d48e635a70d5b157c807e58c8fb45eb2c5e2cb7620000000000'),
+			merkle_root: hex('0dcbd3e6f061215bf3b3383c8ce2ec201bc65acde32595449ac86890bd2dc641'),
+			height: 0,
+			nonce: 2719916434,
+			version: 1,
+			prev_hash: buffertools.fill(new Buffer(32), 0),
+			timestamp: 1303000001,
+			bits: 469794815,
+		},
+		dnsSeeds: [
+			'dnsseed.litecointools.com',
+			'dnsseed.litecoinpool.org',
+			'dnsseed.ltc.xurious.com',
+			'dnsseed.koin-project.com',
+			'dnsseed.weminemnc.com'
+		],
+		defaultClientPort: 8334
 	}
 };
 
