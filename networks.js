@@ -96,7 +96,7 @@ exports.nets = {
 		symbol:'NMC',
 		coinname:'namecoin',
 		name: 'livenet',
-		magic: hex('fbc0b6db'),
+		magic: hex('f9beb4fe'),
 		addressVersion: 0x30,
 		privKeyVersion: 0xb0,
 		P2SHVersion: 5,
@@ -113,11 +113,6 @@ exports.nets = {
 			bits: 469794815,
 		},
 		dnsSeeds: [
-			'dnsseed.litecointools.com',
-			'dnsseed.litecoinpool.org',
-			'dnsseed.ltc.xurious.com',
-			'dnsseed.koin-project.com',
-			'dnsseed.weminemnc.com'
 		],
 		defaultClientPort: 8334
 	}
