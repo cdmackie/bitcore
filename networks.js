@@ -115,6 +115,34 @@ exports.nets = {
 		dnsSeeds: [
 		],
 		defaultClientPort: 8334
+	},
+	DASH:{
+		symbol:'DASH',
+		coinname:'dash',
+		name: 'livenet',
+		magic: hex('bf0c6bbd'),
+		addressVersion: 0x4c,
+		privKeyVersion: 0xcc,
+		P2SHVersion: 5,
+		hkeyPublicVersion: 0x0488c42e,
+		hkeyPrivateVersion: 0x0488e1f4,
+		genesisBlock: {
+			hash: hex('b67a40f3cd5804437a108f105533739c37e6229bc1adcab385140b59fd0f0000'),
+			merkle_root: hex('c762a6567f3cc092f0684bb62b7e00a84890b990f07cc71a6bb58d64b98e02e0'),
+			height: 0,
+			nonce: 28917698,
+			version: 1,
+			prev_hash: buffertools.fill(new Buffer(32), 0),
+			timestamp: 1390095618,
+			bits: 0x1e0ffff0,
+		},
+		dnsSeeds: [
+			'dnsseed.darkcoin.io',
+			'dnsseed.darkcoin.qa',
+			'dnsseed.masternode.io',
+			'dnsseed.dashpay.io'
+		],
+		defaultClientPort: 9999
 	}
 };
 
